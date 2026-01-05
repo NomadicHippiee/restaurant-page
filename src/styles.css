@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,32 +12,41 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
-    padding: 0px 100px;
-    height: 100px;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 0px 100px;
+  height: 100px;
+  align-items: center;
+  position: relative;
 }
 
 nav {
-    height: 100%;
-    display: flex;
-    gap: 15px;
-    align-items: flex-end;
-
-
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
 }
 
 nav button {
-    border: 1px solid black;
-    border-bottom: 0px;
-    padding: 15px 30px;
-    background-color: white;
-
+  border: 1px solid black;
+  border-bottom: 0px;
+  padding: 15px 30px;
+  background-color: white;
+  border-radius: 15px 15px 0px 0px;
 }
 
 #content {
-    flex: 1;
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+}
+
+#content div {
+  flex: 1;
+}
+
+.hero-text {
+  padding: 0px 120px;
 }
