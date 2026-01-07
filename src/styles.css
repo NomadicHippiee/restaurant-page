@@ -37,17 +37,29 @@ nav button {
   border-radius: 15px 15px 0px 0px;
 }
 
+nav button.active {
+  background-color: #ffcc66;
+  color: #222;
+}
+
+
 #content {
   flex: 1;
   background-color: white;
-  justify-content: center;
 }
 
 .wrapper {
   align-items: center;
+  justify-content: center;
+  width: 100%;
 
 }
 
-.wrapper div {
+.menu-wrapper {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wrapper div, .menu-wrapper div {
   flex: 1;
 }
