@@ -4,17 +4,19 @@
   box-sizing: border-box;
 }
 
-body {
-  /* background-color: rebeccapurple; */
-  height: 100vh;
+.flex-container {
   display: flex;
+}
+
+body {
+  background-color: rebeccapurple;
+  height: 100vh;
   flex-direction: column;
 }
 
 header {
-  display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   padding: 0px 100px;
   height: 100px;
   align-items: center;
@@ -23,7 +25,6 @@ header {
 
 nav {
   height: 100%;
-  display: flex;
   gap: 15px;
   align-items: flex-end;
 }
@@ -38,15 +39,15 @@ nav button {
 
 #content {
   flex: 1;
-  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
+.wrapper {
   align-items: center;
 
 }
 
-#content div {
+.wrapper div {
   flex: 1;
-}
-
-.hero-text {
-  padding: 0px 120px;
 }
