@@ -1,4 +1,4 @@
-const HtmlWeppackPlugin = require("html-webpack-plugin"); 
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -11,19 +11,23 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
-    watchFiles:["./src/template.html",]
+    watchFiles: ["./src/template.html"],
   },
   plugins: [
-    new HtmlWeppackPlugin({
-        template: "src/template.html",
+    new HtmlWebpackPlugin({
+      template: "src/template.html",
     }),
   ],
   module: {
     rules: [
-        {
-            test: /\.css$/i,
-            use: ["style-loader", "css-loader"],
-        },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
 };
