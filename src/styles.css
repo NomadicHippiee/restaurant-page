@@ -60,6 +60,10 @@ nav button.active {
   gap: 15px;
 }
 
+.contact-wrapper {
+  flex-direction: column;
+}
+
 .wrapper div, .menu-wrapper div {
   flex: 1;
 }
