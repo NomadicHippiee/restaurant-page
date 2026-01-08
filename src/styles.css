@@ -9,20 +9,24 @@
 }
 
 body {
-  background-color: rebeccapurple;
+  background-color: #b20d30;
   height: 100vh;
   flex-direction: column;
 }
 
 header {
-  background-image: url('./img/pizza-heading.png');
-background-size: 100% 300%, cover;
+  background-image: url("./img/pizza-heading.png");
+  background-size: 100% 300%, cover;
   justify-content: space-between;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffb82b;
   padding: 0px 100px;
   height: 170px;
   align-items: center;
   position: relative;
+  box-shadow: inset -15px -30px 30px 10px rgba(15, 10, 10, 0.5);
+    flex-shrink: 0;
+
+
 }
 
 nav {
@@ -32,40 +36,65 @@ nav {
 }
 
 nav button {
-  border: 1px solid black;
+  border: 1px solid #ffb82b;
   border-bottom: 0px;
   padding: 15px 30px;
-  background-color: white;
   border-radius: 15px 15px 0px 0px;
+  background-color: #ffcc66;
+  box-shadow: 12px -33px 50px 5px rgba(255, 184, 43, 0.5);
 }
 
 nav button.active {
-  background-color: #ffcc66;
+  background-color: #ffb82b;
   color: #222;
 }
 
-
 #content {
   flex: 1;
-  background-color: white;
+  background-color: #ffb82b;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 150px;
 }
 
 .wrapper {
   align-items: center;
-  justify-content: center;
-  width: 100%;
+}
 
+.hero-img {
+  background-image: url("./img/pizza-frontpage.png");
+  background-size: 450px 450px, cover;
+  background-repeat: no-repeat;
+  height: 450px;
 }
 
 .menu-wrapper {
   flex-direction: column;
   gap: 15px;
+  padding-top: 30px;
+}
+
+.menu-item {
+  gap: 50px;
+  align-items: center;
+  padding: 15px 150px;
+  border: 1px solid #b20d30;
+  background-color: #ffcc66;
+  border-radius: 15px;
+}
+.menu-image {
+  max-width: 150px;
+  height: 150px;
+  background-size: 150px 150px, cover;
+  background-repeat: no-repeat;
 }
 
 .contact-wrapper {
   flex-direction: column;
+
 }
 
-.wrapper div, .menu-wrapper div {
+.wrapper div,
+.menu-wrapper div {
   flex: 1;
 }
