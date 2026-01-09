@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fascinate&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +10,23 @@
   display: flex;
 }
 
+a {
+  color: #b20d30;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   background-color: #b20d30;
   height: 100vh;
   flex-direction: column;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #0F0A0A;
 }
 
 header {
@@ -27,6 +42,16 @@ header {
   flex-shrink: 0;
 }
 
+.logo {
+  font-family: "Fascinate", system-ui;
+  color: rgb(255, 204, 102);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-shadow: 2px 0 #0F0A0A, -2px 0 #0F0A0A, 0 2px #0F0A0A, 0 -2px #0F0A0A, 1px 1px #0F0A0A,
+    -1px -1px #0F0A0A, 1px -1px #0F0A0A, -1px 1px #0F0A0A;
+}
+
 nav {
   height: 100%;
   gap: 15px;
@@ -40,6 +65,14 @@ nav button {
   border-radius: 15px 15px 0px 0px;
   background-color: #ffcc66;
   box-shadow: 12px -33px 50px 5px rgba(255, 184, 43, 0.5);
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+}
+
+nav button:hover {
+  text-decoration: underline;
+  text-decoration-color: #b20d30;
+
 }
 
 nav button.active {
@@ -105,7 +138,7 @@ nav button.active {
 .icon-img {
   height: 50px;
   max-width: 50px;
-  width: 50px; 
+  width: 50px;
 }
 
 .square {
