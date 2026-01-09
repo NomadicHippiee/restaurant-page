@@ -12,3 +12,7 @@ https://pngimg.com/search_image/?page=1&search_image=pizza
 The color pallet for this site is generated with: 
 
 https://coolors.co/
+
+Icons are found here: 
+
+https://icons8.com/icons
