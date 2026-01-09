@@ -20,13 +20,11 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid #ffb82b;
   padding: 0px 100px;
-  height: 170px;
+  height: 200px;
   align-items: center;
   position: relative;
   box-shadow: inset -15px -30px 30px 10px rgba(15, 10, 10, 0.5);
-    flex-shrink: 0;
-
-
+  flex-shrink: 0;
 }
 
 nav {
@@ -79,8 +77,9 @@ nav button.active {
   align-items: center;
   padding: 15px 150px;
   border: 1px solid #b20d30;
-  background-color: #ffcc66;
+  background-color: rgba(255, 204, 102, 0.7);
   border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px #b20d30;
 }
 .menu-image {
   max-width: 150px;
@@ -91,7 +90,37 @@ nav button.active {
 
 .contact-wrapper {
   flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  max-width: 650px;
+  padding: 30px 0px;
+}
 
+.icon-wrapper {
+  gap: 15px;
+  margin: auto 0px;
+}
+
+.icon-img {
+  height: 50px;
+  max-width: 50px;
+  width: 50px; 
+}
+
+.square {
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #b20d30;
+  background-color: rgba(255, 204, 102, 0.7);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px #b20d30;
+  gap: 15px;
 }
 
 .wrapper div,
